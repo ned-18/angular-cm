@@ -1,0 +1,72 @@
+{
+  "courses": [
+    {
+      "name": "Test course",
+      "description": "Test description",
+      "city": "Mostar",
+      "startDate": {
+        "year": 2020,
+        "month": 6,
+        "day": 11
+      },
+      "endDate": {
+        "year": 2020,
+        "month": 6,
+        "day": 20
+      },
+      "id": 1
+    },
+    {
+      "name": "Course 3",
+      "description": "description",
+      "city": "Mostar",
+      "startDate": {
+        "year": 2020,
+        "month": 6,
+        "day": 27
+      },
+      "endDate": {
+        "year": 2020,
+        "month": 6,
+        "day": 28
+      },
+      "id": 3
+    },
+    {
+      "name": "Course 5",
+      "description": "Description",
+      "city": "Mostar",
+      "startDate": {
+        "year": 2020,
+        "month": 6,
+        "day": 18
+      },
+      "endDate": {
+        "year": 2020,
+        "month": 6,
+        "day": 19
+      },
+      "id": 4
+    }
+  ],
+  "teachers": [
+    {
+      "firstName": "Frist",
+      "lastName": "Teacher",
+      "email": "email@email.com",
+      "gender": "male",
+      "company": "company",
+      "id": 1
+    }
+  ],
+  "students": [
+    {
+      "firstName": "Brandon",
+      "lastName": "Lee",
+      "email": "email@email.com",
+      "gender": "male",
+      "phoneNumber": "387645134",
+      "id": 1
+    }
+  ]
+}

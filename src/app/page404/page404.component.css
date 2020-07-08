@@ -1,0 +1,36 @@
+.custom-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    vertical-align: center;
+}
+
+.custom-404-header {
+    font-size: 15rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.custom-404-p{
+    font-size: 3rem;
+}
+
+.custom-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+    width: 100%;
+  }
+  
+  .custom-btn:hover {
+    background-color: #FFF;
+    color: #eb2f64;
+  }

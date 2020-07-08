@@ -1,0 +1,29 @@
+<div class="container-fluid pt-2">
+  <cm-common-header title="Teachers" (onAddClick)="addTeacher()"></cm-common-header>
+
+  <div class="row pt-5">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col" class="pull-right action-column">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let teacher of teachers; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ teacher.firstName }} {{ teacher.lastName }}</td>
+        <td class="action-column">
+          <button class="btn btn-info btn-sm mr-1" type="button" (click)="editTeacher(teacher)">
+            Edit
+          </button>
+          <cm-common-delete-btn (onDeleteClick)="deleteTeacher(teacher)"></cm-common-delete-btn>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+

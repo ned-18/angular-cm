@@ -1,0 +1,88 @@
+.custom-container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: #f4f2f2;
+    box-shadow: 0 2rem 6rem rgba(0,0,0, .3);
+    min-height: 80rem;
+}
+    
+.custom-header {
+  min-height: 6rem;
+  padding: 1.2rem 2rem;
+  background-color:#faf9f9;
+  display: flex;
+  flex-flow: row nowrap;
+  box-shadow: 0 2rem 6rem rgba(0,0,0, .3);
+}
+
+.custom-nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.custom-img {
+  height: 5rem;
+  margin-right: 1.5rem;
+}
+
+.custom-title {
+  color: #eb2f64;
+  margin-bottom: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.custom-content {
+  display: flex;
+  min-height: 80rem;
+}
+
+.custom-sidebar {
+  background-color: #333;
+  flex: 0 0 18%;
+  display: flex;
+}
+
+.custom-main-content {
+  background-color: #f4f2f2;
+  flex: 1;
+}
+
+.custom-search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10rem;
+}
+
+.custom-search .custom-search-input {
+  font-size: 1.25rem;
+  background-color:#f0eeee;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  width: 90%;
+  transition: all .2s;
+  margin-right: -3.25rem;
+}
+
+.custom-search .custom-search-input:focus {
+  outline: none;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.custom-user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-user .custom-user-photo {
+  height: 3.75rem;
+  border-radius: 50%;
+  padding: 0 1rem;
+}
+

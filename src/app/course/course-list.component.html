@@ -1,0 +1,29 @@
+<div class="container-fluid pt-2">
+  <cm-common-header title="Courses" (onAddClick)="addCourse()"></cm-common-header>
+
+  <div class="row pt-5">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let course of courses; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ course.name }}</td>
+        <td>{{ course.city }}</td>
+        <td class="action-column">
+          <button class="btn btn-info btn-sm mr-1" type="button">
+            Edit
+          </button>
+          <cm-common-delete-btn (onDeleteClick)="deleteCourse(course)"></cm-common-delete-btn>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ title }}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+
+  <form [formGroup]="teacherForm">
+
+    <div class="form-group">
+      <label>First Name: </label>
+      <input type="text" class="form-control" formControlName="firstName" />
+      <span class="text-danger" *ngIf="firstNameField.touched && firstNameField.errors?.required">
+        Field is required
+      </span>
+      <span class="text-danger" *ngIf="firstNameField.touched && firstNameField.errors?.minlength">
+        Minimum 2 characters is required
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>Last Name: </label>
+      <input type="text" class="form-control" formControlName="lastName" />
+      <span class="text-danger" *ngIf="lastNameField.touched && lastNameField.errors?.required">
+        Field is required
+      </span>
+      <span class="text-danger" *ngIf="lastNameField.touched && lastNameField.errors?.minlength">
+        Minimum 2 characters is required
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>Email: </label>
+      <input type="email" class="form-control" formControlName="email" />
+      <span class="text-danger" *ngIf="emailField.touched && emailField.errors?.required">
+        Field is required
+      </span>
+      <span class="text-danger" *ngIf="emailField.touched && emailField.errors?.email">
+        Email is not valid
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>Company: </label>
+      <input type="text" class="form-control" formControlName="company" />
+    </div>
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" formControlName="gender" type="radio" name="gender" id="male" value="male">
+      <label class="form-check-label" for="male">Male</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" formControlName="gender" type="radio" name="gender" id="female" value="female">
+      <label class="form-check-label" for="female">Female</label>
+    </div>
+
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="submit" class="btn btn-outline-primary" [disabled]="teacherForm.invalid" (click)="handleConfirm()">{{ btnLabel }}</button>
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close()">Close</button>
+</div>

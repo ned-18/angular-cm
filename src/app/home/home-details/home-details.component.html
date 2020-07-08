@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card__side">
+        <div class="card__picture">
+            &nbsp;
+        </div>
+        <h4 class="card__heading">
+            <span class="card__heading-span">Details</span>
+        </h4>
+        <div class="card__details">
+            <ul>
+                <li>Course Name: <span>{{ course.name }}</span></li>
+                <li>Start date: <span>{{ course.startDate.day }}/{{ course.startDate.month }}/{{ course.startDate.year }}</span></li>
+                <li>Description: <span>{{ course.description }}</span></li>
+                <li>City: <span>{{ course.city }}</span></li>
+                <li>Teacher: <span>{{ course.teacher }}</span></li>
+                <li>Students: <span>{{ course.students }}</span></li>
+            </ul>
+        </div>
+    </div>
+</div>

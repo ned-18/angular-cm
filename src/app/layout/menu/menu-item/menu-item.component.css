@@ -1,0 +1,47 @@
+.custom-item:link,
+.custom-item:visited {
+  color: #faf9f9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.custom-item:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.custom-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #eb2f64;
+  transform: scaleY(0);
+  transition: transform .2s, 
+              width .4s cubic-bezier(1,0,0,1) .2s,
+              background-color .1s;
+  z-index: -1;
+}
+
+.custom-item:hover::before,
+.custom-item--active::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+
+.custom-item:active::before {
+  background-color: #eb2f64;
+}
+
+.custom-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 2rem;
+  fill: currentColor;
+}

@@ -1,0 +1,25 @@
+<div class="custom-container"> 
+  <header class="custom-header">
+    <nav class="custom-nav">
+      <h1 class="custom-title">
+        <img src="assets/img/favicon.png" alt="logo" class="custom-img">
+        <a>Course Management System</a>
+      </h1>
+      <form class="custom-search">
+        <input type="text" class="custom-search-input" placeholder="Search...">
+      </form>
+      <div class="custom-user">
+        <img src="assets/img/user.png" alt="User photo" class="custom-user-photo">
+    </div>
+    </nav>
+  </header>
+
+  <div class="custom-content">
+    <div class="custom-sidebar">
+      <cm-menu></cm-menu>
+    </div>
+    <div class="custom-main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

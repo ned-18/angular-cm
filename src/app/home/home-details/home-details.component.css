@@ -1,0 +1,71 @@
+.card {
+    position: relative;
+    width: 45%;
+    margin: 4rem auto;
+}
+
+.card__side {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card__picture {
+    background-size: cover;
+    background-position: top;
+    height: 30rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    background-image: linear-gradient(to right bottom, #FF3366, #BA265D), url(/assets/img/angular.png);
+}
+
+.card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 25rem;
+    right: 2rem;
+    text-align: right;
+}
+
+.card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(255, 51, 102, .85), rgba(186, 38, 93, .85));
+
+}
+
+.card__details {
+    padding: 1rem 3rem;
+}
+.card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+.card__details ul li {
+    font-size: 1.7rem;
+    padding: 1rem;
+    color: #FF3366;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.card__details ul li span {
+    color: #777;
+    text-transform: none;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/*.card__details ul li:not(:last-child)/*{
+    border-bottom: 1px solid #777;
+}*/

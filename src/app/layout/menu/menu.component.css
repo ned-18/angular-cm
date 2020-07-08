@@ -1,0 +1,15 @@
+.custom-nav-pills {
+    font-size: 1.5rem;
+    list-style: none;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-legal {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 45rem;
+}

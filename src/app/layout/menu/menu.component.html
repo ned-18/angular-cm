@@ -1,0 +1,12 @@
+<div class="nav flex-column custom-nav-pills" role="tablist" aria-orientation="vertical">
+  <cm-menu-item
+    *ngFor="let item of menuItems"
+    [name]="item.name"
+    [path]="item.path">
+  </cm-menu-item>
+
+  <div class="custom-legal">
+    &copy; 2020 by angular. All rights reserved.
+  </div>
+
+</div>

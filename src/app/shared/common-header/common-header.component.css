@@ -1,0 +1,30 @@
+.custom-common-header {
+    margin-top: 1rem;
+}
+
+.custom-common-title {
+    font-size: 2rem;
+    color: #eb2f64;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.custom-btn {
+    background-color: #eb2f64;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 1.2rem;
+    padding: 1rem 1.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.custom-btn:focus {
+    outline: none;
+}
+  
+.custom-btn:hover {
+    background-color: #333;
+}
